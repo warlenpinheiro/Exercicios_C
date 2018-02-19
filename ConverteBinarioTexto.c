@@ -23,18 +23,12 @@ int main()
 	char *s;
 
 	s = malloc(50 * sizeof(char));
-
-	while(bin!=2){
-		printf("Digite o binario: ");
-		scanf("%d", &bin);
-
-		if (bin == 2)
-		{
-			continue;
-		}
+	printf("Digite o binario ou qualquer letra para encerrar: ");
+	while(scanf("%d", &bin)){
 
 		s[i] = Binario(bin);
 		i++;
+		printf("Digite o binario ou qualquer letra para encerrar: ");
 	}
 
 	s[i]='\0';
